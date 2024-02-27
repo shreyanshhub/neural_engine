@@ -73,6 +73,8 @@ o = n.tanh()
 o.label = 'o'
 o.backward()
 ```
+-We can visualise the gradients and other data as well ![Visualization](img/vis.png)
+
 
 ### Usage
 
