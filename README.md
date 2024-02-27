@@ -1,5 +1,5 @@
 # neural_engine
-- neural network  built on a scalar engine rather than regular tensor engine **(still in progress)**
+- neural network  built on a scalar engine rather than regular tensor engine **(still in progress,the mlp implementation using Scalar is in process)**
 - inspired by Andrej Karpathy's micrograd tutorials 
 
 ## scalar.py
@@ -73,7 +73,7 @@ o = n.tanh()
 o.label = 'o'
 o.backward()
 ```
--We can visualise the gradients and other data as well ![Visualization](img/vis.png)
+- We can visualise the gradients and other data as well ![Visualization](img/vis.png)
 
 
 ### Usage
