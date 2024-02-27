@@ -15,10 +15,10 @@ This is a simple Python class named `Scalar` which represents scalar values and 
 
 ### Comparison between pytorch and Scalar usage
 
-- Implementing \[
+- Implementing `$\[
 w_1 \cdot x_1 + w_2 \cdot x_2 + b
-\]
-where \( w_1 \), \( w_2 \) are weights, \( x_1 \), \( x_2 \) are inputs, and \( b \) is the bias and a backward pass to evaluate gradients in pytorch
+\] $`
+where `\( w_1 \)`, `\( w_2 \)` are weights, `\( x_1 \)`, `\( x_2 \)` are inputs, and `\( b \)` is the bias and a backward pass to evaluate gradients in pytorch
 
 ```python
 import torch
