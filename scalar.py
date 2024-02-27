@@ -1,3 +1,5 @@
+from vis import *
+
 class Scalar:
     
     def __init__(self,data,_children=(),_op='',label=''):
