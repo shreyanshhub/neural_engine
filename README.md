@@ -1,5 +1,6 @@
 # neural_engine
-neural network  built on a scalar engine rather than regular tensor engine **(still in progress)**
+- neural network  built on a scalar engine rather than regular tensor engine **(still in progress)**
+- inspired by Andrej Karpathy's micrograd tutorials 
 
 ## scalar.py
 
