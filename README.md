@@ -6,7 +6,8 @@
 
 - you can customise your neural network as per your wish
 - you can test it on your own dataset by modifying test.py
-- 1st argument is no of features of your dataset
+- ```python  f = NN(3,[4,4,1]) ```
+- 1st argument in class NN is no of features of your dataset 
 - 2nd argument is a list denoting no of neurons in each layer of network
 - you can change no of epochs in the file , similarly the learning rate and loss function
 - you can plot loss incurred in each training epoch
