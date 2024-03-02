@@ -2,7 +2,7 @@ from ffnn import *
 import matplotlib.pyplot as plt
 
 
-f = FFNN(3,[4,3,1])
+f = NN(3,[4,3,1])
 
 test_data = [[random.uniform(-1,1) for i in range(3)] for _ in range(10)]
 labels = [random.choice([0,1]) for i in range(len(test_data))]

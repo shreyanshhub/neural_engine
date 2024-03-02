@@ -1,6 +1,6 @@
 from layer import *
 
-class FFNN:
+class NN:
 
   def __init__(self,nin,nouts):
 
@@ -12,7 +12,7 @@ class FFNN:
     for layer in self.layers:
       x = layer(x)
 
-    return x 
+    return x
 
   def parameters(self):
 
