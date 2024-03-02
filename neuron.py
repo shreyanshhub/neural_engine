@@ -4,17 +4,16 @@ import numpy as np
 
 class Neuron:
 
-  def __init__(self,nin):
+    def __init__(self,nin):
+        self.w = [Scalar(random.uniform(-1,1)) for i in range(nin)]
+        self.b = Scalar(random.uniform(-1,1))
 
-    self.w = [Scalar(random.uniform(-1,1)) for i in range(nin)]
-    self.b = random.uniform(-1,1)
+    def __call__(self,x):
+        activation = sum((wj*xj for wj,xj in zip(self.w,x)),self.b)
+        output = activation.tanh()
+        return output
 
-  def __call__(self,x):
+    def parameters(self):
 
-    out = sum(w_i*x_i for w_i,x_i in zip(self.w,x))
-    activation = (out+self.b).tanh()
-    return activation 
-
-  def parameters(self):
-
-    return self.w + [self.b]
+        return self.w + [self.b]
+        
