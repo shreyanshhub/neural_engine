@@ -1,4 +1,4 @@
-from ffnn import *
+from nn import *
 import matplotlib.pyplot as plt
 
 

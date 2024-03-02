@@ -1,6 +1,26 @@
 # neural_engine
-- neural network  built on a scalar engine rather than regular tensor engine **(still in progress,the mlp implementation using Scalar is in process)**
-- inspired by Andrej Karpathy's micrograd tutorials 
+- neural network  built on a scalar engine rather than regular tensor engine
+- inspired by Andrej Karpathy's micrograd tutorials
+
+# test.py
+
+- you can customise your neural network as per your wish
+- you can test it on your own dataset by modifying test.py
+- 1st argument is no of features of your dataset
+- 2nd argument is a list denoting no of neurons in each layer of network
+- you can change no of epochs in the file , similarly the learning rate and loss function
+- you can plot loss incurred in each training epoch
+- it goes through a forward pass
+- sets the gradients to zero
+- a backward pass to calculate gradients wrt loss function (backpropagation)
+- and then updates the weights and biases which are called parameters in our model
+- our model implements Stochastic Gradient Descent
+- run the file test.py
+- you can see below how the loss went from 12.78 to 2.07 after 10 epochs
+
+
+![Test](img/test.png)
+
 
 ## scalar.py
 
@@ -61,7 +81,7 @@ b = Scalar(6.8813735870195432,label='b')
 
 x1w1 = x1*w1
 x1w1.label='x1*w1'
-x2w2 = x2*w2 
+x2w2 = x2*w2
 x2w2.label = 'x2*w2'
 
 x1w1x2w2 = x1w1 + x2w2
